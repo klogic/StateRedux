@@ -1,3 +1,7 @@
 export function selectBook(book) {
-  console.log('this book is triggered : ', book);
+  // action alway need to return type. and it must be Capital Letter
+  return {
+    type: 'BOOK_SELECTED',
+    payload: book
+  }
 }
